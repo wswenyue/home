@@ -1,18 +1,12 @@
 <template>
     <div id="app">
-        <h1>Vue test</h1>
-        <FormTest msg="表单测试"/>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import FormTest from './components/FormTest.vue'
-
     export default {
-        name: 'app',
-        components: {
-            FormTest
-        }
+        name: "app"
     }
 </script>
 

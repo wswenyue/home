@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>{{ msg }}</h3>
+        <h3>Form test</h3>
         <el-form ref="form" :model="form" label-width="80px">
             <el-form-item label="活动名称">
                 <el-input v-model="form.name"></el-input>
@@ -56,10 +56,7 @@
 
 <script>
     export default {
-        name: "HelloWorld",
-        props: {
-            msg: String
-        },
+        name: "FormTest",
         data() {
             return {
                 form: {
