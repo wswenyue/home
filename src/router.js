@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router';
 import FormTest from './components/FormTest.vue'
-import indexPage from './components/index.vue'
+import indexPage from './pages/index.vue'
 
 Vue.use(Router);
 
