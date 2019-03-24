@@ -4,6 +4,7 @@
             <use xlink:href="#icon-yumi"></use>
         </svg>
         <br>
+        <button @click="updateMessage()">更新消息</button>
         <h4>致橡树</h4>
 
         <p><br> 我如果爱你—— 绝不像攀援的凌霄花，
@@ -17,7 +18,17 @@
 </template>
 
 <script>
+
+    import Bus from "../constants/Bus";
+
     export default {
-        name: "index-page"
+        name: "index-page",
+        methods: {
+            updateMessage() {
+                console.log("$emit------->");
+                this.$Bus.$emit(Bus.KEY_UPDATE_TITLE, "主页");
+            }
+        }
     }
+
 </script>
