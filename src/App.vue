@@ -1,17 +1,17 @@
 <template>
     <div id="app">
-        <slide_menu show/>
+        <nv_header></nv_header>
         <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import slide_menu from './components/SlideoutMenu.vue'
+    import nv_header from './components/header.vue'
 
     export default {
         name: "app",
         components: {
-            slide_menu
+            nv_header
         }
     }
 </script>
