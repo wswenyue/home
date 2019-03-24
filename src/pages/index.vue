@@ -1,6 +1,8 @@
 <template>
-    <div id="app">
-        <p>一首《致橡树》送给宝贝：</p>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-yumi"></use>
+        </svg>
         <br>
         <h4>致橡树</h4>
 

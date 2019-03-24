@@ -1,12 +1,18 @@
 <template>
     <div id="app">
+        <slide_menu show/>
         <router-view></router-view>
     </div>
 </template>
 
 <script>
+    import slide_menu from './components/SlideoutMenu.vue'
+
     export default {
-        name: "app"
+        name: "app",
+        components: {
+            slide_menu
+        }
     }
 </script>
 

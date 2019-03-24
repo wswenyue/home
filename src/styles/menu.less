@@ -1,0 +1,39 @@
+nav.menu-bar {
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  left: -200px;
+  width: 200px;
+  color: #313131;
+  background-color: #eee;
+  transition: all .3s ease;
+  z-index: 10;
+  &.show {
+    transform: translateX(160px);
+  }
+
+  .menu-list {
+    border-top: 1px solid #d4d4d4;
+    padding-top: 18px;
+    li.menu-item {
+      list-style-type: none;
+      &:hover {
+        background-color: #f5f5f5;
+      }
+      a {
+        display: block;
+        padding: 14px 24px;
+        font-size: 1.4rem;
+        color: #28272a;
+        text-decoration: none;
+        font-weight: 700;
+        .iconfont {
+          margin-right: 30px;
+        }
+      }
+      &:nth-of-type(6) { //消息
+        border-top: 1px solid #d4d4d4;
+      }
+    }
+  }
+}
